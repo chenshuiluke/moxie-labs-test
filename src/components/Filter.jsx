@@ -50,6 +50,12 @@ const Filter = ({
           className="card-header"
           onClick={() => {
             setExpanded(!expanded);
+            if (!expanded == true) {
+              setSelectedGenres([]);
+              setYearFilter("");
+              setMaxRuntime("");
+              setMaxRuntime("");
+            }
           }}
         >
           <p className="card-header-title">Filter</p>
