@@ -41,6 +41,8 @@ function App() {
   useEffect(() => {
     if (search != null && search != "") {
       loadSearch();
+    } else {
+      loadTopFilms();
     }
   }, [search]);
 

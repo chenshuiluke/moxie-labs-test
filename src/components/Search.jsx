@@ -7,7 +7,7 @@ const Search = ({ setSearch }) => {
         className="input is-primary"
         placeholder="Search for film"
         minLength={2}
-        debounceTimeout={300}
+        debounceTimeout={1000}
         onChange={(event) => setSearch(event.target.value)}
       />
     </Form.Control>
