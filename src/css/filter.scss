@@ -1,0 +1,34 @@
+.filter {
+  margin: 0px auto;
+}
+
+.card {
+    margin-bottom: 10px;
+    width: 100%;
+    
+    .card-header {
+      cursor: pointer;
+    
+      .icon {
+        transform: rotate(180deg);
+        transition: transform 150ms ease-out;
+      }
+    }
+        
+    .card-content {
+      transition: max-height 250ms ease;
+      // overflow: hidden;
+    }
+  }
+        
+  .card.not-expanded {
+    .card-header {
+      .icon {
+        transform: rotate(0deg);
+      }
+    }
+    
+    .card-content {
+      padding: 0;
+    }
+  }
